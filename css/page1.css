@@ -1,0 +1,301 @@
+#page1{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	/*display: none;*/
+	overflow: hidden;
+}
+.p1-content{
+	width: 100%;
+	height: 100%;
+	background: url(../img/bg.png) no-repeat;
+	background-size: 100% 100%;
+}
+.p1-title{
+	position: absolute;
+	top: 0.55rem;
+	width: 100%;
+	height: 2.9rem;
+}
+.p1-title img:nth-child(1){
+	position: absolute;
+	top: 0.35rem;
+	left: 0.4rem;
+	width: 0.6rem;
+	z-index: 10;
+}
+.p1-title img:nth-child(2){
+	position: absolute;
+	left: 24%;
+	width: 1.6rem;
+}
+.p1-title img:nth-child(3){
+	position: absolute;
+	top: 5%;
+	left: 2.5rem;
+	width: 0.5rem;
+}
+.p1-title img:nth-child(4){
+	position: absolute;
+	display: none;
+	top: 25%;
+	width: 100%;
+}
+.p1-start{
+	position: absolute;
+	width: 30%;
+	height: 100px;
+	top: 60%;
+	left: 35%;
+}
+.p1-start img:nth-child(1){
+	width: 100%;
+	-webkit-animation: start 2s both ease infinite running normal;
+	animation: start 2s both ease infinite running normal;
+}
+.p1-start img:nth-child(2){
+	width: 50%;
+	position: absolute;
+	top: 50%;
+	left: 80%;
+	-webkit-animation: shou 2s both ease infinite running normal;
+	animation: shou 2s both ease infinite running normal;
+}
+@-webkit-keyframes start{
+	from{
+		-webkit-transform: scale(1,1);
+		transform: scale(1.0,1.0);
+		}
+	50%{
+		-webkit-transform: scale(1,1);
+		transform: scale(1.1,1.1);
+	}
+	to{
+		-webkit-transform: scale(1,1);
+		transform: scale(1,1);
+	}
+}
+@keyframes start{
+	from{
+		-webkit-transform: scale(1.0,1.0);
+		transform: scale(1.0,1.0);
+		}
+	50%{
+		-webkit-transform: scale(1.1,1.1);
+		transform: scale(1.1,1.1);
+	}
+	to{
+		-webkit-ransform: scale(1,1);
+		transform: scale(1,1);
+	}
+}
+@-webkit-keyframes shou{
+	from{
+		opacity: 0;
+	}
+	50%{
+		opacity: 1;
+	}
+	to{
+		opacity: 0;
+	}
+}
+@keyframes shou{
+	from{
+		opacity: 0;
+	}
+	50%{
+		opacity: 1;
+	}
+	to{
+		opacity: 0;
+	}
+}
+.list{
+	width: 90%;
+	height: 8%;
+	position: absolute;
+	top: 85%;
+	left: 7%;
+	z-index: 50;
+	font-size: 0;
+}
+.list li{
+	/*background: green;*/
+	opacity: 0.4;
+	list-style: none;
+	display: inline-block;
+	width: 22%;
+	height: 100%;
+	margin-right: 2.5%;
+}
+.p1-mask{
+	display: none;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: 100;
+	background: black;
+	top: 0;
+	left: 0;
+	opacity: 0.7;
+}
+
+.form{
+	display: none;
+	position: absolute;
+	z-index: 102;
+	top: 20%;
+	left: 12.5%;
+	width: 75%;
+	height: 2.5rem;
+	background: url(../img/form.png)  no-repeat center;
+	background-size: 100% 100%;
+	font-size: 0;
+}
+.form input{
+	width: 75%;
+	height: 13%;
+	border-radius: 10px;
+	outline: none;
+	border: 2px solid red;
+	margin-left: 12.5%;
+	font-size: 0.13rem;
+	text-indent: 16px;
+	background: #f2bb00;
+}
+.form input:nth-child(2){
+	margin-top: 45%;
+}
+.form input:nth-child(4){
+	margin-top: 5%;
+	margin-bottom: 5%;
+}
+.form input[type='button']{
+	color: white;
+	width: 50%;
+	height: 15%;
+	background: #e33145;
+	background: url(../img/submit.png) no-repeat;
+	background-size: 100% 100%;
+	border: none;
+	outline: none;
+	border-radius: 10px;
+	margin: 0 26%;
+}
+.close{
+	position: absolute;
+	top: 0%;
+	right: 3%;
+	display: inline-block;
+	border-radius: 100%;
+	width: 7%;
+	height: 6%;
+	/*background: green;*/
+
+}
+.text-bg{
+	position: absolute;
+	z-index: 102;
+	top: 13%;
+	left: 12.5%;
+	width: 75%;
+	background: url(../img/bang_bg.png)  no-repeat;
+	background-size: 100% 100%;
+	font-size: 0.11rem;
+	padding-bottom: 1%;
+}
+
+.level{
+	display: none;
+	background: url(../img/bang1.png)  no-repeat;
+	background-size: 100% 100%;
+	font-size: 0.11rem;
+	height: 63%;
+}
+.level .bang{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 20%;
+}
+.level .bang li{
+	list-style: none;
+	width: 80%;
+	padding: 0.1rem 0;
+	margin-left: 10%;
+	border-bottom: 1px dashed gray;
+}
+.level .bang li img:nth-child(1){
+	width: 8%;
+	vertical-align: middle;
+}
+.level .bang li img:nth-child(2){
+	width: 20%;
+	border-radius: 100%;
+	height: 25%;
+	vertical-align: middle;
+}
+.level .bang li p:nth-child(1){
+	display: inline-block;
+	padding: 0;
+	margin:0;
+	width: 8%;
+	font-size: 0.13rem;
+	text-align: center;
+}
+.level .bang li span:last-child{
+	margin-top: 3%;
+	float: right;
+}
+.level .bang li span:last-child:after{
+	content: "分";
+}
+.text-bg h2{
+	text-align: center;
+	margin-top: 15%;
+	margin-bottom: 3%;
+	font-size: 0.19rem;
+}
+.text-bg p{
+	font-size: 0.13rem;
+	padding: 1% 5%;
+}
+.rule{
+	display: none;
+}
+.reword{
+	display: none;
+}
+.reword p{
+	padding: 5% 5%;
+}
+.tick{
+	display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

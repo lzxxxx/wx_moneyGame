@@ -1,0 +1,95 @@
+#page3{
+	display: none;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	overflow: hidden;
+}
+.p3-content{
+	width: 100%;
+	height: 100%;
+	background: url(../img/page31.png) no-repeat;
+	background-size: 100% 100%;
+}
+.p3-content h1{
+	padding-top: 1.3rem;
+	text-align: center;
+	color: white;
+	font-size: 0.4rem;
+}
+.p3-content h1:before{
+	content: "￥";
+}
+.p3-content p:nth-child(2){
+	color: white;
+	font-size: 0.1rem;
+	text-align: center;
+	margin: 0.1rem 0 0.19rem 0;
+}
+.p3-content p:nth-child(3){
+	color: #d21026;
+	font-size: 0.13rem;
+	width: 2.3rem;
+	height: 0.28rem;
+	text-align: center;
+	line-height: 0.28rem;
+	margin: 0 auto;
+	border-radius: 5px;
+	background: white;
+}
+.p3-content p span:first-child:before{
+	content: "我的辉煌战绩:￥";
+}
+.p3-content p span:last-child:before{
+	content: "当前排名:";
+}
+.p3-content p span:last-child:after{
+	content: "位";
+}
+.p3-btn{
+	text-align: center;
+	position: absolute;
+	top: 56%;
+	left: 0;
+	right: 0;
+	margin: auto;
+	font-size: 0;
+}
+.p3-btn li{
+	list-style: none;
+	/*background: green;*/
+	opacity: 0.5;
+	display: inline-block;
+	border-radius: 100%;
+	width: 28%;
+	height: 0.9rem;
+}
+.p3-btn li:first-child{
+	margin-left: 0.08rem;
+	margin-right: 0.51rem;
+}
+.share-mask{
+	width: 100%;
+	height: 100%;
+	background: url(../img/share.png) no-repeat;
+	background-size: 100% 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 120;
+	display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
